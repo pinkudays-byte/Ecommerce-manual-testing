@@ -10,37 +10,37 @@
 
 ## Test Areas 
 
-1. Authentication
-   ├── Login
-   ├── Registration
-   ├── Forgot password
-   └── Validation messages
+# 1. Authentication
+   - Login
+   - Registration
+   - Forgot password
+   - Validation messages
 
-2. Product Management
-   ├── Product display
-   ├── Product details
-   ├── Add to cart
-   ├── Favorites
-   └── Related products
+# 2. Product Management
+   - Product display
+   - Product details
+   - Add to cart
+   - Favorites
+   - Related products
 
-3. Product Discovery
-   ├── Search
-   ├── Categories
-   ├── Brand
-   ├── Sustainability
-   ├── Price range
-   └── Sort
+# 3. Product Discovery
+   -  Search
+   - Categories
+   - Brand
+   - Sustainability
+   - Price range
+   - Sort
 
-4. Shopping / Checkout
-   ├── Cart
-   ├── Quantity
-   ├── Address
-   ├── Payment
-   └── Order completion
+# 4. Shopping / Checkout
+   - Cart
+   - Quantity
+   - Address
+   - Payment
+   - Order completion
 
-5. UI / Visual
-   ├── Labels
-   ├── Spelling
-   ├── Images
-   ├── Alignment
-   └── Margins
+# 5. UI / Visual
+   - Labels
+   - Spelling
+   - Images
+   - Alignment
+   - Margins
