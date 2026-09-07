@@ -3,6 +3,7 @@
 ## 1. Authentication
 
 ##ID: TEC-001 
+
 -Test case: Verify a user with valid email and correct password can successfully log in and is redirected to the
  home/dashboard page.
 -Preconditions: Registered user
