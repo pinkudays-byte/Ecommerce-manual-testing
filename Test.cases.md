@@ -1,34 +1,28 @@
 # Test Cases 
 
-## 1. Authentication
+## 1. 
 
 
-# ID: TEC-001 
-## Over this test I will use a Positive Testing following the "happy Path". 
-- Test case: Verify a user with valid email and correct password can successfully log in and is redirected to the
- home/dashboard page.
-- Preconditions: Registered user
-- Steps:
-  - Enter in Sign In
-  - Enter in Sigh Account 
-  - Register valid information on the dashboard 
-  - Click in register
-- Test data: Valid Information on the dashboard "Costumer registration" 
-- Expected result: Registration success 
-- Actual result:
-- Status:
 
-# ID: TEC-002 
-## Boundary Value Analysis, looking for a test beyond the happy path 
-- Test case: Registration (Boundary Value Analysis): Test with weak vs. strong passwords, already registered email, and invalid email formats.
-- Preconditions: Use a wrong over a user already registered. 
-- Steps:
-  -Enter in to "long in" 
-  -Fill the camp with a valid user 
-  -Fill the camp with a invalid password
-- Test data:
-  -User: Pinku@gmail.com
-  -Password: 123456789 
-- Expected result: The system should show an appropriate error message
-- Actual result: 
-- Status:
+# Login Test Cases
+
+## Objective
+
+Validate the login functionality by testing valid credentials, invalid inputs, boundary conditions, account states, and scenarios outside the happy path.
+
+## Test Cases
+
+| ID | Test Case | Preconditions | Steps | Test Data | Technique | Expected Result | Actual Result | Status |
+|---|---|---|---|---|---|---|---|---|
+| TC-001 | Login with valid credentials | Registered user | Enter credentials → Login | Valid email/password | Equivalence Partitioning | User accesses account | — | Not Run |
+| TC-002 | Login with incorrect password | Registered user | Enter valid email + wrong password → Login | Valid email + incorrect password | Equivalence Partitioning | Login is rejected | — | Not Run |
+| TC-003 | Login with unregistered email | User is not registered | Enter unregistered email + password → Login | Unregistered email + valid-format password | Equivalence Partitioning | Login is rejected | — | Not Run |
+| TC-004 | Login with empty email | Login page is available | Leave email empty → Enter password → Login | Empty email + valid password | Equivalence Partitioning | Login is rejected and an appropriate validation message is displayed | — | Not Run |
+| TC-005 | Login with empty password | Login page is available | Enter email → Leave password empty → Login | Valid email + empty password | Equivalence Partitioning | Login is rejected and an appropriate validation message is displayed | — | Not Run |
+| TC-006 | Login with both fields empty | Login page is available | Leave email and password empty → Login | Empty email + empty password | Equivalence Partitioning | Login is rejected and validation messages are displayed | — | Not Run |
+| TC-007 | Login with invalid email format | Login page is available | Enter invalid email format + password → Login | `user@` + valid password | Equivalence Partitioning | Login is rejected and an appropriate validation message is displayed | — | Not Run |
+| TC-008 | Login with leading/trailing spaces in email | Registered user | Enter email with spaces → Enter password → Login | ` test@example.com ` + valid password | Error Guessing | System handles the spaces according to the specified requirements | — | Not Run |
+| TC-009 | Login with uppercase email | Registered user | Enter email using uppercase characters → Enter password → Login | `TEST@EXAMPLE.COM` + valid password | Error Guessing | System handles the email according to the specified requirements | — | Not Run |
+| TC-010 | Login after multiple failed attempts | Registered user with defined failed-attempt policy | Enter incorrect password repeatedly → Login | Valid email + incorrect password | Boundary Value Analysis | System applies the defined failed-attempt policy | — | Not Run |
+| TC-011 | Login after account lockout threshold | Registered user with defined lockout policy | Exceed maximum failed attempts → Login | Valid email + incorrect password | Boundary Value Analysis | Account is locked according to the defined requirements | — | Not Run |
+| TC-012 | Login after account is locked | Account has been locked | Enter correct credentials → Login | Valid email + correct password | State Transition Testing | System handles the locked account according to the defined requirements | — | Not Run |
