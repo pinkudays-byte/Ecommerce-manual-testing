@@ -24,8 +24,8 @@ Low
 3.- Click in login 
 
 ## Test Data
-User: (space) pinkudoe@gmail.com
-Password: Prueba12345!
+- User: (space) pinkudoe@gmail.com
+- Password: Prueba12345!
 
 ## Expected Result
 System handles the spaces according to the specified requirements 
