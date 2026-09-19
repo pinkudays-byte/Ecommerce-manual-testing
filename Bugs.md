@@ -42,12 +42,52 @@ TC-008
 ## Status
 Open
 
+# BUG-002 —  Login with uppercase email
+
+## Summary
+- The system does not recognize uppercase letters in the username field.
+
+## Severity
+- High
+
+## Priority
+- High
+
+## Environment
+- Browser: Firefox
+- Browser version: 155
+- Operating System: Windows 11
+
+## Preconditions
+- User a valid user and password
+
+## Steps to Reproduce
+- Use a user with a at least one upper case letter 
+
+## Test Data
+- User: PINKUDOE@GMAIL.COM 
+- Password: Prueba12345!
+
+## Expected Result
+- The system should accept uppercase and lowercase letters and validate the username based on its format.
+
+## Actual Result
+- The system does not recognize uppercase letters even though the username is valid.
+
+## Evidence
+<img width="895" height="496" alt="image" src="https://github.com/user-attachments/assets/cc5e7c7f-c7eb-4371-b5bf-ec5c2bf008d9" />
+
+
+## Related Test Case
+TC-009
+
+## Status
+Open
 
 
 
 
-
-# BUG-002 —  	Add a product to the cart
+# BUG-003 —  	Add a product to the cart
 
 ## Summary
 - The system displays an error message even though the function is working correctly.
@@ -89,3 +129,92 @@ TC-016
 
 ## Status
 Open
+
+# BUG-005 —  	Add product to Favorites
+
+## Summary
+- The system displays an error message even though the function is working correctly.
+
+## Severity
+- Medium
+
+## Priority
+- High
+
+## Environment
+- Browser: Firefox
+- Browser version: 155
+- Operating System: Windows 11
+
+## Preconditions
+- Login
+- Add a product to favorites 
+
+## Steps to Reproduce
+- Add a product to favorites
+- Verify if the product was added correctly
+
+## Test Data
+- Product: Combination Pliers
+
+## Expected Result
+- The product is added to the user's Favorites list
+
+## Actual Result
+- The products is successfully added, but an error message is displayed.
+
+## Evidence
+<img width="1589" height="332" alt="image" src="https://github.com/user-attachments/assets/b07b35b7-d014-4210-983f-e02f016c762a" />
+
+
+## Related Test Case
+TC-017
+
+## Status
+Open
+
+# BUG-004 —  	Add multiple quantities of a product to the cart
+
+## Summary
+- The system displays an error message even though the function is working correctly.
+
+## Severity
+- Medium
+
+## Priority
+- High
+
+## Environment
+- Browser: Firefox
+- Browser version: 155
+- Operating System: Windows 11
+
+## Preconditions
+- The product and cart stage should be available 
+
+## Steps to Reproduce
+- Click on at least a 2 product
+- Verify if the product was added correctly
+
+## Test Data
+- Product: Combination Pliers
+- Product: Pliers 
+
+## Expected Result
+- The products should added in the car 
+
+## Actual Result
+- The products is successfully added, but an error message is displayed.
+
+## Evidence
+<img width="1606" height="454" alt="image" src="https://github.com/user-attachments/assets/06ce8b3d-a6ae-4746-92bb-6c529c6cdb91" />
+
+## Related Test Case
+TC-017
+
+## Status
+Open
+
+
+
+
