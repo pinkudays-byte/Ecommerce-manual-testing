@@ -85,8 +85,6 @@ TC-009
 Open
 
 
-
-
 # BUG-003 —  	Add a product to the cart
 
 ## Summary
@@ -126,49 +124,6 @@ Open
 
 ## Related Test Case
 TC-016
-
-## Status
-Open
-
-# BUG-005 —  	Add product to Favorites
-
-## Summary
-- The system displays an error message even though the function is working correctly.
-
-## Severity
-- Medium
-
-## Priority
-- High
-
-## Environment
-- Browser: Firefox
-- Browser version: 155
-- Operating System: Windows 11
-
-## Preconditions
-- Login
-- Add a product to favorites 
-
-## Steps to Reproduce
-- Add a product to favorites
-- Verify if the product was added correctly
-
-## Test Data
-- Product: Combination Pliers
-
-## Expected Result
-- The product is added to the user's Favorites list
-
-## Actual Result
-- The products is successfully added, but an error message is displayed.
-
-## Evidence
-<img width="1589" height="332" alt="image" src="https://github.com/user-attachments/assets/b07b35b7-d014-4210-983f-e02f016c762a" />
-
-
-## Related Test Case
-TC-017
 
 ## Status
 Open
@@ -214,6 +169,136 @@ TC-017
 
 ## Status
 Open
+
+
+# BUG-005 —  	Add product to Favorites
+
+## Summary
+- The system displays an error message even though the function is working correctly.
+
+## Severity
+- Medium
+
+## Priority
+- High
+
+## Environment
+- Browser: Firefox
+- Browser version: 155
+- Operating System: Windows 11
+
+## Preconditions
+- Login
+- Add a product to favorites 
+
+## Steps to Reproduce
+- Add a product to favorites
+- Verify if the product was added correctly
+
+## Test Data
+- Product: Combination Pliers
+
+## Expected Result
+- The product is added to the user's Favorites list
+
+## Actual Result
+- The products is successfully added, but an error message is displayed.
+
+## Evidence
+<img width="1589" height="332" alt="image" src="https://github.com/user-attachments/assets/b07b35b7-d014-4210-983f-e02f016c762a" />
+
+
+## Related Test Case
+TC-020
+
+## Status
+Open
+
+
+# BUG-006 — Sort products by price Low to High
+
+## Summary
+- The sort funtion is not working
+
+## Severity
+- High
+
+## Priority
+- High
+
+## Environment
+- Browser: Firefox
+- Browser version: 155
+- Operating System: Windows 11
+
+## Preconditions
+- The display of product should be available 
+
+## Steps to Reproduce
+- Choose a price with the function sort and click search 
+
+## Test Data
+- Sort for "1-55" 
+
+## Expected Result
+- The products should be sorted according to the selected criteria.  
+
+## Actual Result
+- The function is not working. The products do not change after selecting a sorting option.
+
+## Evidence
+<img width="1329" height="697" alt="image" src="https://github.com/user-attachments/assets/a631f2c5-55b2-4565-acfd-24a6f3449bd2" />
+
+## Related Test Case
+- TC-027
+
+## Status
+Open
+
+# BUG-007 — Sort products by price high to low
+
+## Summary
+- The sort function is not working
+
+## Severity
+- High
+
+## Priority
+- High
+
+## Environment
+- Browser: Firefox
+- Browser version: 155
+- Operating System: Windows 11
+
+## Preconditions
+- The display of product should be available 
+
+## Steps to Reproduce
+- Choose a price with the function sort and click search 
+
+## Test Data
+- Sort for "55-200" 
+
+## Expected Result
+- The products should be sorted according to the selected criteria.  
+
+## Actual Result
+- The function is not working. The products do not change after selecting a sorting option.
+
+## Evidence<img width="1342" height="743" alt="image" src="https://github.com/user-attachments/assets/9b97d08b-717d-4990-9fc8-63b25ebd60a3" />
+
+## Related Test Case
+- TC-028
+
+## Status
+Open
+
+
+
+
+
+
 
 
 
